@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro");
+*, body {
+    margin: 0;
+    font-family: "Vollkorn";
+    width: 100%;
+}
+body {
+    overflow-x: hidden;
+}
+header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px 1px black;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+header nav div {
+    width: 50%;
+    display: flex;
+}
+.Navigation {
+    width: 50%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+.Navigation p {
+    display: flex;
+    justify-content: right;
+    font-size: 2.5vh;
+    width: auto;
+}
+.Navigation p a {
+    cursor: pointer;
+    border-bottom: solid 2px transparent;
+}
+.Navigation p a:hover {
+    border-bottom: solid 2px white;
+    color: white;
+}
+.Logo {
+    font-size: 2.6vh;
+    display: flex;
+}
+.Logo h2 {
+    width: auto;
+    display: flex;
+    cursor: pointer;
+    transition: 1s;
+    animation: logoAnimate 3s infinite;
+}
+.Logo h2:hover {
+    transition: 0.8s;
+    color: white;
+    text-shadow: 0 0 5px white;
+    animation: unset;
+}
+@keyframes logoAnimate {
+    0% {
+        color: black;
+    }
+    25% {
+        color: red;
+    }
+    50% {
+        color: black;
+    }
+    75% {
+        color: red;
+
+    }
+}
+.Body {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, red, blue);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.Body .Wrapper {
+    width: 90%;
+    background: transparent;
+    height: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Body .Wrapper .Content {
+    height: 50%;
+    transition: 2s;
+    opacity: 1;
+}
+.Body .Wrapper .Content .Title {
+    text-shadow:
+    0 0 5px white;
+} 
+.Body .Wrapper .Content .Title h1 {
+    font-size: 6vh;
+}
+.Body .Wrapper .Content .Description {
+    font-size: 2.65vh;
+    color: white;
+    font-weight: bold;
+}
+.Body .Wrapper .Content .Description .buttonGo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.Body .Wrapper .Content .Description .buttonGo button {
+    outline: none;
+    font-weight: bolder;
+    width: 80%;
+    border: solid 2px transparent;
+    font-size: 3vh;
+    box-shadow: 0 0 5px 1px white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.Body .Wrapper .Content .Description .buttonGo button:hover {
+    border: solid 2px blue;
+    outline: solid 2px white;
+    box-shadow: 0 0 8px 1px blue;
+}
+.Body .Wrapper .Content .Description .buttonGo button:active {
+    border: solid 2px red;
+    background: red;
+    color: white;
+    box-shadow: 0 0 10px 2px white;
+    outline: solid 2px white;
+
+}
+.img-gif {
+    float: right;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    transition: 2s;
+}
+#welcome {
+    width: 300px;
+    color: white;
+    font-weight: lighter;
+    text-align: left;
+}
+.img-gif img {
+    border-bottom: solid 2px white;
+    width: auto;
+    background-position: center;
+    background-size: cover;
+    border: inset solid 2px transparent;
+}
+
+
+.TitleC {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.TitleC div {
+    display: flex;
+    width: 100%;
+}
+.TitleC h2 {
+    width: 50%;
+    display: flex;
+    border-bottom: solid 2px white;
+    color: white;
+}
+.FeaturesItem {
+    overflow-x: hidden;
+}
+.FI-I {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 2.5vh;
+    margin: 5px 0 5px 0;
+    display: flex;
+    padding: 3px 0 3px 8px;
+}
+.FI-I p {
+    width: 50%;
+    display: flex;
+}
+.FI-Status {
+    justify-content: space-evenly;
+}
+.FI-Status i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}

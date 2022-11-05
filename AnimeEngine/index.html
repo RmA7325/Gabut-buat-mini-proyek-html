@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vollkorn">
+    <title>Sansekai</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="Logo">
+                <h2 onclick="reloadPage()" id="logo">Re&nbsp;Links&nbsp;<i class="fa-solid fa-chain"></i></h2>
+            </div>
+            <div class="Navigation">
+                <p><a>About</a></p>
+                <p><a>Service</a></p>
+                <p><a>Contact</a></p>
+            </div>
+        </nav>
+    </header>
+    <div class="Body">
+        <div class="Wrapper">
+            <div class="Content" id="Content">
+                <div class="img-gif" id="img-gif">
+                    <div>
+                        <img alt="gif" oncontextmenu="protectDownload(event)" id="anime1gif" name="anime.gif" src="anime1.gif"></img>
+                        <h3 id="welcome"></h3>
+                    </div>
+                </div>
+                <div class="Title">
+                    <h1>Do you wanna to use this service today?</h1>
+                </div>
+                <div class="Description">
+                    <div>   
+                        <p>Here you can find anime details or download anime here <br>
+                            Thousands of anime waiting for you to watch what are you waiting for, come on
+                        </p>
+                    </div>
+                    <br>
+                    <div class="buttonGo">
+                        <button onclick="docs()">Go</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js" async defer></script>
+    <script src="https://kit.fontawesome.com/b8ce388c33.js" crossorigin="anonymous"></script>
+</body>
+</html>
